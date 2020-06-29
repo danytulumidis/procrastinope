@@ -3,8 +3,9 @@ import "./Description.scss";
 
 function Description() {
   return (
-    <div className='section-description-image'>
-      <h1 className='description'>Pomodoro Technique</h1>
+    <div className='description'>
+      <h1 className='title'>Procrastinope</h1>
+      <h2 className='description-text'>Get some work done!</h2>
     </div>
   );
 }
