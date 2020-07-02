@@ -23,11 +23,11 @@
   text-align: center;
   color: white;
   font-size: 5em;
+  text-transform: uppercase;
 }
 
 .description-text {
   @extend .title;
-  margin-top: 0%;
   font-size: 3em;
   color: rgb(255, 0, 0);
 }

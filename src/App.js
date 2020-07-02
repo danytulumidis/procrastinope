@@ -7,7 +7,7 @@ import Pomodoro from "./components/Pomodoro/Pomodoro";
 
 function App() {
   return (
-    <div className='main'>
+    <div>
       <Description />
       <Pomodoro />
     </div>

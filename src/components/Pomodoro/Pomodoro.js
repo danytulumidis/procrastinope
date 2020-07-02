@@ -1,10 +1,12 @@
 import React from "react";
 import "./Pomodoro.scss";
+import Button from "../Button/Button";
 
 function Pomodoro() {
   return (
-    <div class='pomodoro'>
-      <h2 class='pomo-header'>Pomodoro Section</h2>
+    <div className='pomodoro'>
+      <h2 className='pomo-header'>Pomodoro Section</h2>
+      <Button />
     </div>
   );
 }
