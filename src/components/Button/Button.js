@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
 
-function Button() {
+const Button = () => {
   return (
     <a href='/'>
       <span></span>
@@ -11,6 +11,6 @@ function Button() {
       START
     </a>
   );
-}
+};
 
 export default Button;
