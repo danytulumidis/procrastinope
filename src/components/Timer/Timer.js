@@ -1,11 +1,15 @@
 import React from "react";
 import "./Timer.scss";
 
-function Timer() {
+function Timer({ setPomoTime }) {
   return (
     <div className='timer'>
       <h1>Time</h1>
-      <input type='number'></input>
+      <input
+        type='number'
+        placeholder='min'
+        onChange={(e) => setPomoTime(e)}
+      ></input>
     </div>
   );
 }

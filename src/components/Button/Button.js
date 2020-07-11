@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useState, Fragment } from "react";
 import "./Button.scss";
 
-const Button = () => {
-  return (
-    <a href='/'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      START
-    </a>
-  );
+const Button = ({ startPomodoro, time }) => {
+  const [error, setError] = useState(false);
+
+  const timeError = () => {
+    setError(true);
+  };
+
+  if (time < 1) {
+    return (
+      <Fragment>
+        <a onClick={() => timeError()}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          START
+        </a>
+        {error && <h1>Please set a valid time</h1>}
+      </Fragment>
+    );
+  } else {
+    return (
+      <a onClick={() => startPomodoro(true)}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        START
+      </a>
+    );
+  }
 };
 
 export default Button;
