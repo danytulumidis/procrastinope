@@ -6,22 +6,22 @@ import Timer from "../Timer/Timer";
 
 function Pomodoro() {
   const [time, setTime] = useState(0);
-  const [start, setStart] = useState(false);
+  const [started, setStarted] = useState(false);
 
   const setPomoTime = ($event) => {
     setTime($event.target.value);
   };
 
   const startPomodoro = () => {
-    setStart(true);
+    setStarted(true);
   };
 
   return (
     <div className='pomodoro'>
       <h2 className='pomo-header'>Pomodoro Section</h2>
       <Button startPomodoro={startPomodoro} time={time} />
-      <Timer setPomoTime={setPomoTime} />
-      <Progressbar time={time} start={start} />
+      <Timer setPomoTime={setPomoTime} started={started} />
+      <Progressbar time={time} started={started} />
     </div>
   );
 }
