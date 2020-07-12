@@ -21,7 +21,7 @@ function Pomodoro() {
       <h2 className='pomo-header'>Pomodoro Section</h2>
       <Button startPomodoro={startPomodoro} time={time} />
       <Timer setPomoTime={setPomoTime} started={started} />
-      <Progressbar time={time} started={started} />
+      {started && <Progressbar time={time} />}
     </div>
   );
 }
