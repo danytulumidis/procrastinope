@@ -5,17 +5,12 @@ import { Circle } from "rc-progress";
 const Progressbar = (props) => {
   const { time } = props;
 
-  const convertTime = (time) => {
-    const convertedTime = time * 60;
-    return convertedTime;
-  };
-
-  const [countdown, setCountdown] = useState(convertTime(time));
+  const [countdown, setCountdown] = useState(100);
 
   useEffect(() => {
     const interval = setInterval(() => {
       countdown > 0
-        ? setCountdown((newCountdown) => newCountdown - 1)
+        ? setCountdown((newCountdown) => newCountdown - (time * 60) / 100)
         : clearInterval(interval);
     }, 1000);
 
