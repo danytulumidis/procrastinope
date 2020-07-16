@@ -10,7 +10,9 @@ const Progressbar = (props) => {
   useEffect(() => {
     const interval = setInterval(() => {
       countdown > 0
-        ? setCountdown((newCountdown) => newCountdown - (time * 60) / 100)
+        ? setCountdown((newCountdown) =>
+            Number(newCountdown - 100 / (time * 60)).toFixed(2)
+          )
         : clearInterval(interval);
     }, 1000);
 
@@ -19,7 +21,6 @@ const Progressbar = (props) => {
 
   return (
     <div className='progress'>
-      <h1 className='closer'>{countdown}</h1>
       <Circle
         percent={countdown}
         strokeWidth='10'
