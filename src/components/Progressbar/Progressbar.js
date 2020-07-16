@@ -3,9 +3,16 @@ import "./Progressbar.scss";
 import { Circle } from "rc-progress";
 
 const Progressbar = (props) => {
-  const { time } = props;
+  const { time, setPomoFinished } = props;
 
   const [countdown, setCountdown] = useState(100);
+
+  const endPomodoro = (interval) => {
+    clearInterval(interval);
+    // Reset Progressbar
+    setCountdown(0);
+    setPomoFinished(true);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,7 +20,7 @@ const Progressbar = (props) => {
         ? setCountdown((newCountdown) =>
             Number(newCountdown - 100 / (time * 60)).toFixed(2)
           )
-        : clearInterval(interval);
+        : endPomodoro(interval);
     }, 1000);
 
     return () => clearInterval(interval);
