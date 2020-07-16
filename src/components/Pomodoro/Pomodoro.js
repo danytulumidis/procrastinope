@@ -19,7 +19,12 @@ function Pomodoro() {
   };
 
   const startPomodoro = () => {
+    setFinished(false);
     setStarted(true);
+  };
+
+  const resetPomo = () => {
+    setStarted(false);
   };
 
   return (
@@ -27,7 +32,13 @@ function Pomodoro() {
       <h2 className='pomo-header'>Pomodoro Section</h2>
       <Button startPomodoro={startPomodoro} time={time} />
       <Timer setPomoTime={setPomoTime} started={started} />
-      {started && <Progressbar time={time} setPomoFinished={setPomoFinished} />}
+      {started && (
+        <Progressbar
+          time={time}
+          setPomoFinished={setPomoFinished}
+          resetPomo={resetPomo}
+        />
+      )}
       {finished && <FinishAlert />}
     </div>
   );

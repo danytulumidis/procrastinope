@@ -3,7 +3,7 @@ import "./Progressbar.scss";
 import { Circle } from "rc-progress";
 
 const Progressbar = (props) => {
-  const { time, setPomoFinished } = props;
+  const { time, setPomoFinished, resetPomo } = props;
 
   const [countdown, setCountdown] = useState(100);
 
@@ -12,6 +12,7 @@ const Progressbar = (props) => {
     // Reset Progressbar
     setCountdown(0);
     setPomoFinished(true);
+    resetPomo();
   };
 
   useEffect(() => {
