@@ -5,6 +5,10 @@ import Progressbar from "../Progressbar/Progressbar";
 import Timer from "../Timer/Timer";
 import FinishAlert from "../FinishAlert/FinishAlert";
 
+// TODOs
+// Design changes
+// Promodoro Counter
+
 function Pomodoro() {
   const [time, setTime] = useState(0);
   const [started, setStarted] = useState(false);
