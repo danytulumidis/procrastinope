@@ -12,7 +12,7 @@ const Button = ({ startPomodoro, time }) => {
   if (time < 1) {
     return (
       <Fragment>
-        <a onClick={() => timeError()}>
+        <a className="link-pointer" onClick={() => timeError()}>
           <span></span>
           <span></span>
           <span></span>
