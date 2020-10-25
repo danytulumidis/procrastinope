@@ -6,4 +6,4 @@ Deal with procrastination with the pomodoro technique.
 Just set your time (like 25 minutes) and press Start.
 Track your time with a real-time updating progressbar.
 
-Other techniques incoming!
+Other techniques and Design changes incoming!
