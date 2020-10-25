@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bbf060aa9673b8edd219e4ee812bc51d",
+    "revision": "bc7e1d9f225e355b22181b52144b172a",
     "url": "/procrastinope/index.html"
   },
   {
-    "revision": "065d4f5589a0b1fa359e",
-    "url": "/procrastinope/static/css/main.13dbc668.chunk.css"
+    "revision": "313f01539e796518e0bb",
+    "url": "/procrastinope/static/css/main.32f9dd68.chunk.css"
   },
   {
     "revision": "7b9c66376f7b5aba6ad4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/procrastinope/static/js/2.1523f99b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "065d4f5589a0b1fa359e",
+    "revision": "313f01539e796518e0bb",
     "url": "/procrastinope/static/js/main.41774780.chunk.js"
   },
   {
