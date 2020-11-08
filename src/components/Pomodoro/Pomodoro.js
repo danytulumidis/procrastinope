@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import Progressbar from "../Progressbar/Progressbar";
 import Timer from "../Timer/Timer";
 import FinishAlert from "../FinishAlert/FinishAlert";
+import Counter from "../Counter/Counter";
 
 // TODOs
 // Design changes
@@ -44,6 +45,7 @@ function Pomodoro() {
         />
       )}
       {finished && <FinishAlert />}
+      <Counter />
     </div>
   );
 }
