@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Progressbar.scss";
 import { Circle } from "rc-progress";
+import Countdown from "../Countdown/Countdown";
 
 const Progressbar = (props) => {
   const { time, setPomoFinished, resetPomo } = props;
@@ -29,6 +30,7 @@ const Progressbar = (props) => {
 
   return (
     <div className='progress'>
+      <Countdown startTime={time} />
       <Circle
         percent={countdown}
         strokeWidth='10'
