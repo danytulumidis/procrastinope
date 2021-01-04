@@ -9,9 +9,8 @@ const Countdown = ({ startTime }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setMinutes(Math.floor(time / 60));
-      setSeconds(time % 60);
+      setSeconds(time >= 10 ? time % 60 : "0" + (time % 60));
       setTime(time - 1);
-      console.log(minutes, seconds, time);
     }, 1000);
 
     return () => clearInterval(interval);

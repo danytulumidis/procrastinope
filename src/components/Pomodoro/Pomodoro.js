@@ -8,12 +8,13 @@ import Counter from "../Counter/Counter";
 
 // TODOs
 // Design changes
-// Promodoro Counter
+// Pomodoro Counter
 
 function Pomodoro() {
   const [time, setTime] = useState(0);
   const [started, setStarted] = useState(false);
   const [finished, setFinished] = useState(false);
+  const [finishedPomoCounter, setfinishedPomoCounter] = useState(0);
 
   const setPomoTime = ($event) => {
     setTime($event.target.value);
@@ -21,6 +22,7 @@ function Pomodoro() {
 
   const setPomoFinished = () => {
     setFinished(true);
+    setfinishedPomoCounter(finishedPomoCounter + 1);
   };
 
   const startPomodoro = () => {
@@ -45,7 +47,7 @@ function Pomodoro() {
         />
       )}
       {finished && <FinishAlert />}
-      <Counter />
+      <Counter finishedPomoCounter={finishedPomoCounter} />
     </div>
   );
 }
