@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/procrastinope/static/css/main.9c42826f.chunk.css",
-    "main.js": "/procrastinope/static/js/main.bde42b1a.chunk.js",
-    "main.js.map": "/procrastinope/static/js/main.bde42b1a.chunk.js.map",
+    "main.css": "/procrastinope/static/css/main.528e9871.chunk.css",
+    "main.js": "/procrastinope/static/js/main.2ebae468.chunk.js",
+    "main.js.map": "/procrastinope/static/js/main.2ebae468.chunk.js.map",
     "runtime-main.js": "/procrastinope/static/js/runtime-main.34029dfe.js",
     "runtime-main.js.map": "/procrastinope/static/js/runtime-main.34029dfe.js.map",
-    "static/js/2.7805fc02.chunk.js": "/procrastinope/static/js/2.7805fc02.chunk.js",
-    "static/js/2.7805fc02.chunk.js.map": "/procrastinope/static/js/2.7805fc02.chunk.js.map",
+    "static/js/2.ade0b425.chunk.js": "/procrastinope/static/js/2.ade0b425.chunk.js",
+    "static/js/2.ade0b425.chunk.js.map": "/procrastinope/static/js/2.ade0b425.chunk.js.map",
     "index.html": "/procrastinope/index.html",
-    "static/css/main.9c42826f.chunk.css.map": "/procrastinope/static/css/main.9c42826f.chunk.css.map",
-    "static/js/2.7805fc02.chunk.js.LICENSE.txt": "/procrastinope/static/js/2.7805fc02.chunk.js.LICENSE.txt"
+    "static/css/main.528e9871.chunk.css.map": "/procrastinope/static/css/main.528e9871.chunk.css.map",
+    "static/js/2.ade0b425.chunk.js.LICENSE.txt": "/procrastinope/static/js/2.ade0b425.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.34029dfe.js",
-    "static/js/2.7805fc02.chunk.js",
-    "static/css/main.9c42826f.chunk.css",
-    "static/js/main.bde42b1a.chunk.js"
+    "static/js/2.ade0b425.chunk.js",
+    "static/css/main.528e9871.chunk.css",
+    "static/js/main.2ebae468.chunk.js"
   ]
 }
