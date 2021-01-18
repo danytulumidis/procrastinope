@@ -1,19 +1,28 @@
 import React, { useState, useEffect } from "react";
 import "./Countdown.scss";
 
-const Countdown = ({ startTime }) => {
-  const [time, setTime] = useState(startTime * 60);
+const Countdown = ({ startTime, endPomodoro }) => {
+  const [time, setTime] = useState(new Date().getTime()+ (startTime * 60 * 1000));
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setMinutes(Math.floor(time / 60));
-      setSeconds(time >= 10 ? time % 60 : "0" + (time % 60));
+      let distance = time - new Date().getTime();
+
+      setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+      setSeconds(Math.floor((distance % (1000 * 60)) / 1000))
       setTime(time - 1);
+      if (distance < 0) {
+        endPomodoro();
+      }
     }, 1000);
 
-    return () => clearInterval(interval);
+    
+    
+    return () => {
+      clearInterval(interval);
+    }
   });
 
   return (

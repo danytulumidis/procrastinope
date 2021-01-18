@@ -8,7 +8,6 @@ import Counter from "../Counter/Counter";
 
 // TODOs
 // Design changes
-// Pomodoro Counter
 
 function Pomodoro() {
   const [time, setTime] = useState(0);
