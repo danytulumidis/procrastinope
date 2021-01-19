@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/procrastinope/static/css/main.528e9871.chunk.css",
-    "main.js": "/procrastinope/static/js/main.2ebae468.chunk.js",
-    "main.js.map": "/procrastinope/static/js/main.2ebae468.chunk.js.map",
+    "main.js": "/procrastinope/static/js/main.c3e950da.chunk.js",
+    "main.js.map": "/procrastinope/static/js/main.c3e950da.chunk.js.map",
     "runtime-main.js": "/procrastinope/static/js/runtime-main.34029dfe.js",
     "runtime-main.js.map": "/procrastinope/static/js/runtime-main.34029dfe.js.map",
     "static/js/2.ade0b425.chunk.js": "/procrastinope/static/js/2.ade0b425.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.34029dfe.js",
     "static/js/2.ade0b425.chunk.js",
     "static/css/main.528e9871.chunk.css",
-    "static/js/main.2ebae468.chunk.js"
+    "static/js/main.c3e950da.chunk.js"
   ]
 }
