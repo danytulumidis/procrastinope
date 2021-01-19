@@ -11,15 +11,13 @@ const Countdown = ({ startTime, endPomodoro }) => {
       let distance = time - new Date().getTime();
 
       setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-      setSeconds(Math.floor((distance % (1000 * 60)) / 1000))
+      setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
       setTime(time - 1);
       if (distance < 0) {
         endPomodoro();
       }
     }, 1000);
 
-    
-    
     return () => {
       clearInterval(interval);
     }
@@ -27,7 +25,7 @@ const Countdown = ({ startTime, endPomodoro }) => {
 
   return (
     <div>
-      <h1>{`${minutes}:${seconds}`}</h1>
+      <h1>{`${minutes}:${seconds < 10 ? "0" + seconds : seconds}`}</h1>
     </div>
   );
 };
